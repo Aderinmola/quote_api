@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "913a69ea-ac40-4c68-922b-96c7163aaba9",
+		"name": "quotes_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11617499",
+		"_collection_link": "https://solar-shadow-825195.postman.co/workspace/assessment~3d5cc8e3-e759-4915-9c1b-ad191bdf1301/collection/11617499-913a69ea-ac40-4c68-922b-96c7163aaba9?action=share&source=collection_link&creator=11617499"
+	},
+	"item": [
+		{
+			"name": "get_quotes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Comedy\",\r\n    \"description\": \"People of all ages are welcome\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/quotes",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"quotes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_quotes",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Tribal\",\r\n    \"description\": \"Welcoming people of all ages\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/quotes",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"quotes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
