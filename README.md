@@ -19,3 +19,18 @@ This is an API project called QUOTES API built with Flask.
 _Quote_|
 | *GET* | ```/quotes``` | _List all quotes_|_All quotes_|
 | *POST* | ```/quotes``` | _Create a quotes_|_Create quotes_|
+
+### 📬 Postman Collection
+
+You can import the included Postman collection to test the API:
+
+- File: [`Flask API postman collection.json`](./quotes_api.postman_collection.json)
+
+Instructions:
+1. Open Postman
+2. Click "Import" > "Upload Files"
+3. Select the file above
+4. Start sending requests to `http://localhost:5000/quotes`
+
+
+
